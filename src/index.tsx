@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 
 const store = setupStore();
 root.render(
-  <Router>
+  <Router basename="dato">
     <Provider store={store}>
       <App />
     </Provider>
