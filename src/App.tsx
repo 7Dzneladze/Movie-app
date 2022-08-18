@@ -7,14 +7,16 @@ import Team from "./components/Team";
 
 function App() {
   return (
-    <Container>
-      <Header />
-      <Routes>
-        <Route path="*" element={<MovieListing />} />
-        <Route path="/details/:imdbID" element={<MovieDetail />} />
-        <Route path="/team" element={<Team />} />
-      </Routes>
-    </Container>
+    <div>
+      <Container>
+        <Header />
+        <Routes>
+          <Route path="*" element={<MovieListing />} />
+          <Route path="/details/:imdbID" element={<MovieDetail />} />
+          <Route path="/team" element={<Team />} />
+        </Routes>
+      </Container>
+    </div>
   );
 }
 
