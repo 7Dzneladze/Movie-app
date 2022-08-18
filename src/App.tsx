@@ -10,7 +10,7 @@ function App() {
     <Container>
       <Header />
       <Routes>
-        <Route path="/" element={<MovieListing />} />
+        <Route path="*" element={<MovieListing />} />
         <Route path="/details/:imdbID" element={<MovieDetail />} />
         <Route path="/team" element={<Team />} />
       </Routes>
